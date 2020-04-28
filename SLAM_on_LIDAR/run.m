@@ -1,14 +1,15 @@
 
-GroundTruthPath = "~/Desktop/Project/poses/03.txt";
+GroundTruthPath = "~/Desktop/Project/poses/07.txt";
 
 import gtsam.*;
 import gtsam_unstable.*;
 
 %% load data 
+datapath = '~/Desktop/Project/Final/Tranformation_Data/transformations&GT07.mat';
 % make sure transformations&GT.mat is in the current directory
-[edges_gicp_con, edges_gicp_non, cov_gicp_con, cov_gicp_non, edges_sicp_con, edges_sicp_non, cov_sicp_con, cov_sicp_non, T_Pose_GT, edges_sicp, edges_gicp] = AliloadTransformations03('~/Desktop/Project/Final/Tranformation_Data/transformations&GT03.mat');
+[edges_gicp_con, edges_gicp_non, cov_gicp_con, cov_gicp_non, edges_sicp_con, edges_sicp_non, cov_sicp_con, cov_sicp_non, T_Pose_GT, edges_sicp, edges_gicp] = AliloadTransformations03(datapath);
 % [edges_gicp_sort, edges_gicp_con, edges_gicp_non, edges_sicp_sort, edges_sicp_con, edges_sicp_non, T_Pose_GT, edges_sicp, edges_gicp] = AliloadTransformations('~/Desktop/Project/Final/Tranformation_Data/transformations&GT.mat');
-
+edges_sic=edges_sicp;
 
 %% Define loop closures
 
@@ -23,7 +24,7 @@ printresult = 1;
 loopclosures = 0;
 
 %for gicp
-[Results, smootherResult] = AliConcurrent503aided2(lag, sync, priorNoise, Noise, icp, non_con, printresult, loopclosures);
+[Results, smootherResult] = AliConcurrent503aided2(lag, sync, priorNoise, Noise, icp, non_con, datapath, printresult, loopclosures);
 
 results_gicp = [];
 for i=1:size(smootherResult,2)    
