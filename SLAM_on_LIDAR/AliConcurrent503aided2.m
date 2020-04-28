@@ -19,7 +19,7 @@ import gtsam.*;
 import gtsam_unstable.*;
 
 %% Read data
-[edges_gicp_con, edges_gicp_non, cov_gicp_con, cov_gicp_non, edges_sicp_con, edges_sicp_non, cov_sicp_con, cov_sicp_non, T_Pose_GT] = AliloadTransformations03('transformations&GT03.mat');
+%[edges_gicp_con, edges_gicp_non, cov_gicp_con, cov_gicp_non, edges_sicp_con, edges_sicp_non, cov_sicp_con, cov_sicp_non, T_Pose_GT] = AliloadTransformations03('transformations&GT03.mat');
 % Define the smoother lag (in seconds)
 
 if icp == "gicp"
