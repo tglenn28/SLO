@@ -7,7 +7,7 @@
 %   Date: 04/20/2020
 %_________________________________________________________________________
 
-function [Results, smootherResult] = AliConcurrent503aided2(lag, sync, priorNoise, Noise, icp, non_con, printresult, loopclosures)
+function [Results, smootherResult] = AliConcurrent503aided2(lag, sync, priorNoise, Noise, icp, non_con, datapath, printresult, loopclosures)
 
 %input lag ex: lag = 2,5,10
 %input priorNoise & Noise sigmas in the following format ex: [0.1; 0.1; 0.1; 0.1; 0.1; 0.1];
@@ -19,7 +19,7 @@ import gtsam.*;
 import gtsam_unstable.*;
 
 %% Read data
-%[edges_gicp_con, edges_gicp_non, cov_gicp_con, cov_gicp_non, edges_sicp_con, edges_sicp_non, cov_sicp_con, cov_sicp_non, T_Pose_GT] = AliloadTransformations03('transformations&GT03.mat');
+[edges_gicp_con, edges_gicp_non, cov_gicp_con, cov_gicp_non, edges_sicp_con, edges_sicp_non, cov_sicp_con, cov_sicp_non, T_Pose_GT] = AliloadTransformations03(datapath);
 % Define the smoother lag (in seconds)
 
 if icp == "gicp"
