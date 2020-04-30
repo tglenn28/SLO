@@ -77,21 +77,8 @@ else
     %% Step 1: Option 2 - Alternatively Load in Required Matrices
     load('transformations&GT.mat');
 end
-%% Step 1.2: Creay Struct to Store 
-% Step 2.1: Plot Ground Truth Pose Calc with Lidar Odometry
-GT_cumm_dist = 0;
-pt_GT = [T_Pose_GT(1,5) T_Pose_GT(1,9) T_Pose_GT(1,13)];
-pt_GT_s = [T_Pose_SK(1,5) T_Pose_SK(1,9) T_Pose_SK(1,13)];
-for i=2:size(T_Pose_GT,1)
-    pose = [reshape(T_Pose_GT(i,2:end),4,3)'; 0 0 0 1];
-    
-    pt_GT = [pt_GT; [T_Pose_GT(i,5) T_Pose_GT(i,9) T_Pose_GT(i,13)]];
-    
-    pt_GT_s = [pt_GT_s; [T_Pose_SK(i,5) T_Pose_SK(i,9) T_Pose_SK(i,13)]];
-    
-    GT_cumm_dist = [GT_cumm_dist; sum(vecnorm(pt_GT(1:i-1,:)' - pt_GT(2:i,:)'))];
-end
-% Creay Struct to Store 
+%% Step 1.2: Create Struct to Store 
+% Create Struct to Store Poses
 PoseStruct(1).name = 'KITTI Pose Ground Truth';
 PoseStruct(1).poses = T_Pose_GT; % NOTE: Removing 0, 0, 0 pose since we dont calculate it
 PoseStruct(2).name = 'Semantic KITTI Pose Ground Truth';
@@ -123,8 +110,6 @@ PCDDir = dir('/Volumes/DRAGON/KITTI/KITTI_MOD/07/velodyne/*.pcd');
 PCDFiles = fullfile({PCDDir.folder}', {PCDDir.name}');
 %%
 M = plotPoses4VideoandCalcError(PoseStruct, 1, animated,'07Animation',addPointCloud,PCDFiles);
-
-
 
 
 
