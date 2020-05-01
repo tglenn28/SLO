@@ -12,7 +12,7 @@ To run iSAM on 00_map data for both sicp and gicp transformations - (transformat
 
 3. Open run_00.m for data set 00 or run_07.m for data set 07.
 
-3.  Assign path for data ```transformations&GT00_new.mat``` (or the other GICP/SICP transformation data files included); these files located in folder ```Trransformation_Data``` already contains the ground truth data 
+3.  Assign path for data (datapath = ...) ```transformations&GT00_new.mat``` (or the other GICP/SICP transformation data files included); these files located in folder ```Trransformation_Data``` already contains the ground truth data 
 *the ```.mat``` files were already parsed from the generated sicp gicp transformations using ```.m``` files in folder “Generate_Transformations”.
 
 4. run files from 3.
