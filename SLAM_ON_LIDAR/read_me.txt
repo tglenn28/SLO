@@ -5,7 +5,7 @@ To run iSAM on 00_map data for both sicp and gicp transformations - (transformat
 
 1. Open run_00.m
 
-3.  Assign path for data “transformations&GT00.mat” ; this file located in folder “Trransformation_Data” already contains the ground truth data (this.mat file was already parsed from the generated sicp gicp transformations using .m files in folder “Generat_Transformations”)
+3.  Assign path for data “transformations&GT00_new.mat” ; this file located in folder “Trransformation_Data” already contains the ground truth data (this.mat file was already parsed from the generated sicp gicp transformations using .m files in folder “Generat_Transformations”)
 
 4. Make sure to add all files in folder to matlab path and run the “run_00.m”  to visualize the iSAM results and compare then when using GICP vs SICP transformations.
 
