@@ -14,3 +14,5 @@ To run iSAM on 00_map data for both sicp and gicp transformations - (transformat
 For 07 data open run_07 and make sure to load "transformations&GT07_labels_removed.mat" OR "transformations&GT07.mat"
 
 ###################################################################
+
+***ADDITIONAL_WORK Folder contains application attempt for concurrent filtering and smoothing using generated loop closures and the ICP transformations.
