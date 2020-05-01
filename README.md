@@ -2,13 +2,14 @@
 Semantic Lidar Odometry
 
 This is the Mobile Robotics Project for the Ford 3 Group: 
-__Members__ Ali Badredine, Austin Jeffries, and Tyler Glenn
+
+__Group Members:__ Ali Badredine, Austin Jeffries, and Tyler Glenn
 
 ## SLO
 
 
 
-Using the semantic-icp algorithm in conjunction with the widely available GTSAM library we were able to compute the relative transformation between two semantically labelled point clouds that are near and used these calculated transformations to do odometry using the iSAM2 solver in GTSAM. The code implememtation is contained on this page. Please read our paper which is refrences in the publications section.
+Using the semantic-icp algorithm in conjunction with the widely available GTSAM library we were able to compute the relative transformation between two semantically labelled point clouds that are near and used these calculated transformations to do odometry using the iSAM2 solver in GTSAM. The code implememtation is contained on this page. Please read our paper which is linked [here](EECS_568_Final_Project.pdf).
 
 
 [![SLO](utils/images/slo_screen_grab.png)](https://www.youtube.com/watch?v=0wvZ5xyvVrM)
@@ -43,7 +44,7 @@ This folder contains utility code for our implementation of Semantic Lidar Odome
 
 ## Acknowledgements
 
-We would like to thank our professor, Maani Ghaffari Jadidi for his overall guidance on this project and Steven Parkison for his support in using his SICP software library correctly.
+We would like to thank our professor, Maani Ghaffari Jadidi for his overall guidance on this project and Steven Parkison for his support in using his semantic-icp library correctly.
 
 
 
