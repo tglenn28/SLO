@@ -1,7 +1,7 @@
 # SLO
 Semantic Lidar Odometry
 
-This is the Mobile Robotics Project for Ford 3: Ali Badredine, Austin Jeffries, and Tyler
+This is the Mobile Robotics Project for Ford 3: Ali Badredine, Austin Jeffries, and Tyler Glenn
 
 Our master branch is organized into three main folders. 
 
