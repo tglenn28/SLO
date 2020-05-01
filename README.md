@@ -8,7 +8,7 @@ __Members__ Ali Badredine, Austin Jeffries, and Tyler Glenn
 
 Using the semantic-icp algorithm in conjunction with the widely available GTSAM library we were able to first compute the relative transformation between two point clouds that are near - both consecutive and ones that are separated between 1 and 5 point clouds away and used these calculated transformations to do odometry using the iSAM2 solver in GTSAM. As a comparison, we also calculated transformations using the generalized iterative closest point algorithm as a baseline. Please see our video below for a brief explanation of our project.
 
-[![SLO](https://github.com/tglenn28/SLO/tree/master/utils/images/slo_screen_grab.png)](https://www.youtube.com/watch?v=0wvZ5xyvVrM&t=2s)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0wvZ5xyvVrM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Our master branch is organized into three main folders. 
 
