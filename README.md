@@ -8,7 +8,7 @@ __Members__ Ali Badredine, Austin Jeffries, and Tyler Glenn
 
 
 
-Using the semantic-icp algorithm in conjunction with the widely available GTSAM library we were able to compute the relative transformation between two semantically labelled point clouds that are near and used these calculated transformations to do odometry using the iSAM2 solver in GTSAM. The code implememtation is contained on this page.
+Using the semantic-icp algorithm in conjunction with the widely available GTSAM library we were able to compute the relative transformation between two semantically labelled point clouds that are near and used these calculated transformations to do odometry using the iSAM2 solver in GTSAM. The code implememtation is contained on this page. Please read our paper which is refrences in the publications section.
 
 
 [![SLO](utils/images/slo_screen_grab.png)](https://www.youtube.com/watch?v=0wvZ5xyvVrM)
@@ -35,7 +35,7 @@ Please reference the read me inside this folder to get this code working.
 This folder contains our slightly modified version of the great work done by Steven Parkison. Please reference the read me inside this folder to get this code working. 
 [README.md](https://github.com/tglenn28/SLO/tree/master/Semantic-icp)
 
-## Utils
+## utils
 
 This folder contains utility code for our implementation of Semantic Lidar Odometry
 
