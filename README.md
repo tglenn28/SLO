@@ -3,7 +3,7 @@ Semantic Lidar Odometry
 
 This is the Mobile Robotics Project for the Ford 3 Group: 
 
-__Group Members:__ Ali Badredine, Austin Jeffries, and Tyler Glenn
+__Group Members:__ Ali Badreddine, Austin Jeffries, and Tyler Glenn
 
 ## SLO
 
