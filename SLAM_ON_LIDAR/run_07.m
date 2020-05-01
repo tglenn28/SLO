@@ -14,7 +14,7 @@ f = figure(1);
 ax = axes('Parent',f);
 hold(ax,'on');
 
-GroundTruthPath = "~/Desktop/Project/poses/07.txt";
+%GroundTruthPath = "~/Desktop/Project/poses/07.txt";
 
 import gtsam.*;
 import gtsam_unstable.*;
