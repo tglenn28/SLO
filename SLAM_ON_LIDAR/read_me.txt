@@ -17,3 +17,4 @@ For 07 data open run_07 and make sure to load "transformations&GT07_labels_remov
 
 ***GTSAM is needed to run this.
 ***ADDITIONAL_WORK Folder contains application attempt for concurrent filtering and smoothing using generated loop closures and the ICP transformations.
+***In the results folders first element in Error_iSAM.mat corresponds to the GICP error results and second element corresponds to SICP.
