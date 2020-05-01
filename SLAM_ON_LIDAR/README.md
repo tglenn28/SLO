@@ -16,14 +16,11 @@ To run iSAM on 00_map data for both sicp and gicp transformations - (transformat
 
 4. run files from 3.
 
-
-
-
 ## Required Libraries
 * GTSAM
 * semantic-icp (OR generated transformations in this folder can be used)
 
-## Future Work (Additional_Work)
-Folder contains attempt on applying concurrent filtering and smoothing using generated loop closures on the ICP transformations. Code is runable, but result is not optimal yet. 
+## Future Work
+Additional_Work folder contains attempt on applying concurrent filtering and smoothing using generated loop closures on the ICP transformations. Code is runable, but result is not optimal yet. 
 
 ***In the results folders first element in Error_iSAM.mat corresponds to the GICP error results and second element corresponds to SICP.
