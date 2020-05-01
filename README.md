@@ -6,7 +6,9 @@ __Members__ Ali Badredine, Austin Jeffries, and Tyler Glenn
 
 ## SLO
 
-Using the semantic-icp algorithm in conjunction with the widely available GTSAM library we were able to first compute the relative transformation between two point clouds that are near - both consecutive and ones that are separated between 1 and 5 point clouds away and used these calculated transformations to do odometry using the iSAM2 solver in GTSAM. As a comparison, we also calculated transformations using the generalized iterative closest point algorithm as a baseline. Please see our video below for a brief explanation of our project.
+
+
+Using the semantic-icp algorithm in conjunction with the widely available GTSAM library we were able to compute the relative transformation between two semantically labelled point clouds that are near and used these calculated transformations to do odometry using the iSAM2 solver in GTSAM. The code implememtation is conatined on this page. 
 
 [![SLO](utils/images/slo_screen_grab.png)](https://www.youtube.com/watch?v=0wvZ5xyvVrM)
 
@@ -21,8 +23,8 @@ Our master branch is organized into three main folders.
 ## SLAM_ON_LIDAR
 
 This folder contains code for the following:
-1. The main run file to run iSAM2 solver
-2. Our Matlab Visualization tool
+1. The main run file to ```run_00.m ```
+2. The main run file to ``` run_07.m ```
 
 ## Semantic-icp
 
